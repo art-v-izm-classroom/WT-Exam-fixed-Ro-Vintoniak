@@ -17,7 +17,7 @@ function calculate(operation) {
             if (num2 !== 0) {
                 result = num1 / num2;
             } else {
-                result = "Division by zero!";
+                result = "На нуль ділити неможна!";
             }
             break;
         default:
