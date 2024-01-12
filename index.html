@@ -1,30 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Exam</title>
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
 <body>
     <h1>Екзаменаційна робота</h1>
-    <h2>Прізвище Ім'я По батькові</h2>
-  
-    <div>
-        <label for="op1">Operand 1:</label>
-        <input id="op1" type="text">
-        <label for="op2">Operand 2:</label>
-        <input id="op2" type="text">   
-        <h3 id="res">Result:</h3>
-        <button id="add-button">+</button>
-        <button id="sub-button">-</button>
-        <button id="mul-button">*</button>
-        <button id="div-button">/</button>
-        <button id="log-button">log</button>
-        <button id="sin-button">sin</button>
-        <button id="tan-button">tan</button>
+    <h1>Vintoniak Roman</h1>
+    <div class="add">
+    <input type="number" id="num1" placeholder="Введіть число">
+    <input type="number" id="num2" placeholder="Введіть число">
+    <button onclick="calculate('add')">Додавання</button>
+    <button onclick="calculate('subtract')">Віднімання</button>
+    <button onclick="calculate('multiply')">Множення</button>
+    <button onclick="calculate('divide')">Ділення</button>
+    <p id="result"></p>
     </div>
-  
-    <div id="content"></div>  
+    <script src="Script.js"></script>
 </body>
 </html>
